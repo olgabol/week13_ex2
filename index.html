@@ -62,9 +62,14 @@
         function showDevis() {
             let a = firstNum.value;
             let b = secondNum.value;
-            let c = a / b;
-            c.innerHTML = result;
-            result.append(c);
+
+            if (b == 0) {
+                alert('На 0 делить нельзя!');
+            } else {
+                let c = a / b;
+                c.innerHTML = result;
+                result.append(c);
+            };
         };
     </script>
 </body>
